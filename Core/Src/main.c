@@ -105,6 +105,13 @@ int main(void)
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
 
+  // Init system modules .......................................................
+  if( HAL_OK != init_sys( ))
+  {
+	  // An error occured in initilaization, system can not start!
+	  Error_Handler( );
+  }
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
