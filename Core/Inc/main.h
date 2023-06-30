@@ -49,6 +49,7 @@ extern "C" {
 #include "init.h"
 #include "debug.h"
 #include "revision.h"
+#include "ble.h"
 
 
 
