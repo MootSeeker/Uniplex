@@ -188,6 +188,7 @@ void SystemClock_Config(void)
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
+	debug_printf("--> Enter Error Handler! disabling system!");
   /* User can add his own implementation to report the HAL error return state */
   __disable_irq();
   while (1)
